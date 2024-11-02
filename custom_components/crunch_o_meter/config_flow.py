@@ -1,12 +1,12 @@
-import voluptuous as vol
-from collections import OrderedDict
+# pylint: disable=missing-function-docstring, missing-class-docstring, broad-exception-caught, missing-module-docstring, signature-differs
 import logging
+from collections import OrderedDict
 
+import voluptuous as vol
 from homeassistant import config_entries
 
-from .const import DOMAIN, CONF_CLUB
-from .club import list_all_clubs, ClubNotFoundError
-
+from .club import ClubNotFoundError, list_all_clubs
+from .const import CONF_CLUB, DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
 

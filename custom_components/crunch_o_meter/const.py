@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring, missing-class-docstring, missing-module-docstring
+
 DOMAIN = "crunch_o_meter"
 VERSION = "0.0.0-dev"  # Now updated by release workflow
 ISSUE_URL = "https://github.com/GuyLewin/home-assistant-crunch-o-meter"

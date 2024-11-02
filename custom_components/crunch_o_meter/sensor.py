@@ -1,3 +1,4 @@
+# pylint: disable=missing-function-docstring, missing-class-docstring, missing-module-docstring
 from homeassistant.helpers.entity import Entity
 
 from .const import (
@@ -24,7 +25,7 @@ async def async_setup_entry(hass, entry, async_add_devices):
 
 
 class SensorBase(Entity):
-    should_poll = True
+    should_poll = True # type: ignore
     SENSOR_ID = "N/A"
     SENSOR_NAME = "N/A"
 
