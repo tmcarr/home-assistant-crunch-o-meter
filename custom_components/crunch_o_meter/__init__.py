@@ -23,7 +23,7 @@ async def async_setup_entry(hass, config_entry):
         config_entry, options=config_entry.data
     )
     hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(config_entry, PLATFORM)
+        hass.config_entries.async_forward_entry_setups(config_entry, PLATFORM)
     )
     return True
 
